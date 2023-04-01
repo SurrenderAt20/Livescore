@@ -15,9 +15,11 @@ import "../styles/NavBar.css";
 export const NavBar = ({ theme, handleThemeChange }) => {
   return (
     <nav className="navBar">
-      <div className="logo">
-        <img src={logo} alt={logo} />
-      </div>
+      <NavLink to="/">
+        <div className="logo">
+          <img src={logo} alt={logo} />
+        </div>
+      </NavLink>
       <div className="navLinks">
         <ul>
           <li>
@@ -33,7 +35,7 @@ export const NavBar = ({ theme, handleThemeChange }) => {
           <li>
             <NavLink to="/basketball" activeClassName="active">
               <IoIosBasketball />
-              Basketball
+              <span>Basketball</span>
             </NavLink>
           </li>
         </ul>

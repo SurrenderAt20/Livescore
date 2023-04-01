@@ -19,6 +19,7 @@ body {
     height: 100px;
     padding: 0 20px;
     box-sizing: border-box;
+    margin-bottom: 20px;
   }
   
   .logo {
@@ -52,17 +53,17 @@ body {
     margin-right: 0;
   }
   
-  .navLinks a {
-    color: #fff;
+  .navLinks li a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
+    color: #fff;
+    position: relative;
     letter-spacing: 1px;
   }
 
-  .navLinks li a {
-    text-decoration: none;
-    color: #fff;
-    margin-bottom: 20px;
-    position: relative;
+  .navLinks li a svg {
+    margin-right: 10px;
   }
 
   
