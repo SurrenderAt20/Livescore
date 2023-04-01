@@ -10,12 +10,12 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #161616;
+    background-color: #202020;
     color: #fff;
     height: 60px;
     padding: 0 20px;
     box-sizing: border-box;
-    border-radius: 0 0 5px;
+    /* border-radius: 0 0 5px; */
   }
   
   .logo {
@@ -25,6 +25,12 @@ body {
   .logo img {
     height: 100px;
   }
+
+  .navLinks {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
   
   .navLinks ul {
     display: flex;
@@ -32,10 +38,11 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+    margin-left: 50px;
   }
   
   .navLinks li {
-    margin-right: 20px;
+    margin-right: 40px;
   }
   
   .navLinks li:last-child {
@@ -45,7 +52,7 @@ body {
   .navLinks a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    letter-spacing: 1px;
   }
   
   .themeSwitch {
