@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.verticalNavBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  color: #fff;
+  background-color: #202020;
+  margin-left: 2rem;
+  border-radius: 5px;
+}
+
+.verticalNavBar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.verticalNavBar li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.verticalNavBar li:hover {
+  background-color: #e6e6e6;
+}
+
+.verticalNavBar .active {
+  background-color: #d4d4d4;
+}
+
+.verticalNavBar svg {
+  margin-right: 10px;
+}
+
+.verticalNavBar span {
+  font-size: 16px;
+  font-weight: bold;
+}
