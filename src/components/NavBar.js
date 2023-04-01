@@ -1,7 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../images/Goalio.png";
-import { IoIosMoon, IoIosSunny } from "react-icons/io";
+import {
+  IoIosFootball,
+  IoIosBaseball,
+  IoIosBasketball,
+  IoIosMoon,
+  IoIosSunny,
+} from "react-icons/io";
 import "../styles/NavBar.css";
 
 //Line 6:
@@ -15,19 +21,30 @@ export const NavBar = ({ theme, handleThemeChange }) => {
       <div className="navLinks">
         <ul>
           <li>
-            <Link to="/football">Football</Link>
+            <NavLink to="/football" activeClassName="active">
+              <IoIosFootball /> Football
+            </NavLink>
           </li>
           <li>
-            <Link to="/football">Baseball</Link>
+            <NavLink to="/baseball" activeClassName="active">
+              <IoIosBaseball /> Baseball
+            </NavLink>
           </li>
           <li>
-            <Link to="/football">Basketball</Link>
+            <NavLink to="/basketball" activeClassName="active">
+              <IoIosBasketball />
+              Basketball
+            </NavLink>
           </li>
         </ul>
       </div>
       <div className="themeSwitch">
         <button onClick={handleThemeChange}>
-          {theme === "light" ? <IoIosMoon /> : <IoIosSunny />}
+          {theme === "light" ? (
+            <IoIosMoon size={50} />
+          ) : (
+            <IoIosSunny size={50} />
+          )}
         </button>
       </div>
     </nav>
