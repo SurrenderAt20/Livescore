@@ -80,7 +80,9 @@ export const VerticalNavBar = () => {
           {showLeagues && (
             <ul className="subMenu">
               {selectedSport.leagues.map((league, index) => (
-                <li key={index}>{league}</li>
+                <div className="leagues">
+                  <li key={index}>{league}</li>
+                </div>
               ))}
             </ul>
           )}
@@ -90,7 +92,7 @@ export const VerticalNavBar = () => {
           {showCountries && (
             <ul className="subMenu">
               {selectedSport.countries.map((country, index) => (
-                <div className="countriesContainer">
+                <div className="countries">
                   <li key={index}>{country}</li>
                 </div>
               ))}

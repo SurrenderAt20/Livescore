@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .verticalNavBar {
   display: flex;
   flex-direction: column;
@@ -8,15 +13,24 @@
   margin-left: 2rem;
   border-radius: 5px;
   overflow: hidden;
-  transition: height 0.3s ease;
+  transition: max-height 0.3s ease;
 }
 
 .verticalNavBar.expanded {
-  height: 200px;
+  display: flex;
+  height: 400px;
 }
 
 .verticalNavBar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.countries {
+  margin: 10px;
+}
+
+.leagues {
+  margin: 10px;
 }
