@@ -6,19 +6,18 @@ body {
 .verticalNavBar {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 250px;
+  width: 20%;
   color: #fff;
   background-color: #202020;
-  margin-left: 2rem;
-  border-radius: 5px;
+  margin-left: 1rem;
+  border-radius: 15px;
   overflow: hidden;
   transition: max-height 0.3s ease;
 }
 
 .verticalNavBar.expanded {
   display: flex;
-  height: 400px;
+  height: 500px;
 }
 
 .verticalNavBar ul {
@@ -27,10 +26,31 @@ body {
   padding: 0;
 }
 
+.menuHeadline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2rem;
+  width: 75%;
+}
+
+.menuHeadline h3 {
+  letter-spacing: 1px;
+}
+
 .countries {
   margin: 10px;
 }
 
 .leagues {
   margin: 10px;
+}
+
+.leagues li,
+.countries li {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  height: 30px;
+  padding: 0 35px;
 }
