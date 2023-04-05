@@ -9,3 +9,7 @@ body {
     margin-right: 10%;
 }
 
+.dashboardContainer {
+    display: flex;
+}
+
